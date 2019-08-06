@@ -21,7 +21,12 @@ function App() {
     setPalpite(150);
   };
   if (estado === "ENTRADA") {
-    return <button onClick={iniciarJogo}>Começar a jogar!</button>;
+    return (
+      <div>
+        <p>Pense em um número de 0 a 300 </p>
+        <button onClick={iniciarJogo}>Começar a jogar!</button>
+      </div>
+    );
   }
   const menor = () => {
     setNumPalpites(numPalpites + 1);
